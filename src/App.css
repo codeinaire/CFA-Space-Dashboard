@@ -1,10 +1,75 @@
-.App {
-  text-align: center;
+.container {
+  background-color: black;
+  border-radius: 1%;
+  padding: 25px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+
+.c-flex-1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.c-flex-1 > div {
+  border-radius: 1%;
+}
+
+.component1 {
+  width: 400px;
+  height: 300px;
+  background: red;
+}
+
+.component2 {
+  background: grey;
+  width: 400px;
+  height: 300px;
+}
+
+.component3 {
+  background: purple;
+  width: 400px;
+  height: 300px;
+}
+
+.component4 {
+  background: orange;
+  width: 100px;
+  height: 100px;
+}
+
+.c-flex-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.component5 {
+  background: goldenrod;
+  width: 600px;
+  height: 350px;
+}
+
+.component6 {
+  background: yellow;
+  width: 600px;
+  height: 350px;
+}
+
+.component7 {
+  background: green;
+  width: 100px;
+  height: 549px;
+  margin-top: -200px;
+}
+
+
+.App {
+  text-align: center;
 }
 
 .App-header {
