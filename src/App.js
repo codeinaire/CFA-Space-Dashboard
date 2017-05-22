@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Map from './components/Map';
 import './App.css';
 import Video from './components/Video';
+import Weather from './components/Weather';
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
           <div className="component4">People in space</div>
         </div>
         <div className="c-flex-2">
-          <div className="component5">Weather component</div>
+          <div className="component5"><Weather /></div>
           <div className="component6"><Map />
           </div>
           <div className="component7">Rocket component</div>

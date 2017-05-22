@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "leaflet": "^1.0.3",
+    "react-forecast": "^0.0.7",
     "react-iframe": "^1.0.5",
     "react-leaflet": "^1.1.7",
     "react-materialize": "^0.18.4"
