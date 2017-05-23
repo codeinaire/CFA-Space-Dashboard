@@ -9,7 +9,7 @@ class RocketLaunch extends Component {
       <div>
         <h3>Rocket Launch</h3>
         {/* <img src={require('../images/rocketcartoon.jpg')} className="imgRocket" alt="RocketPicture"/> */}
-        Rocket Name: {this.props.getLaunchName} <br/> Rocket Launch Date: {this.props.getLaunchTime} <br/> 
+        {this.props.getLaunchName} <br/> Is Launching at {this.props.getLaunchTime} <br/> in {this.props.getLaunchLocation}
       </div>
     );
   };

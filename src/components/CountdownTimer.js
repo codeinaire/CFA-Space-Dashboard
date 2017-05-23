@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom'
 //   <Countdown options={OPTIONS} />
 // )
 
-const OPTIONS = { endDate: '03/01/2018 10:55 AM', prefix: 'until my LIFTOFF!', cb}
+const OPTIONS = { endDate: '05/24/2017 01:00 AM', prefix: 'until LIFTOFF!', cb}
 
 const cb = () => {
   console.log('expired callback')
@@ -18,6 +18,7 @@ class CountdownTimer extends Component {
     return  (
       <div>
           <Countdown options={OPTIONS}/>
+          {this.props.getLaunchTime}
       </div>
     )
   }

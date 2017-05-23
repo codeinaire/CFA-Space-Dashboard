@@ -13,6 +13,7 @@ class App extends Component {
       // allData: [],
       launchTime: '',
       launchName: '',
+      launchLocation: '',
     };
   };
 
@@ -22,16 +23,19 @@ class App extends Component {
 
   getLaunchDetails() {
     console.log('componentDidMount()');
-    const URL = "https://launchlibrary.net/1.2/launch/next/1";
+    const URL = "https://launchlibrary.net/1.2/launch/next/2";
     axios.get(URL)
     .then((response) => {
-      // console.log(response.data);
-      // console.log('launchTime', response.data.launches[0].net)
+      console.log(response.data);
+      console.log(response.data.launches[0].location.name)
       // console.log('launchName', response.data.launches[0].name)
       this.setState({
         // allData: response.data,
         launchTime: response.data.launches[0].net,
-        launchName:response.data.launches[0].name
+        launchName:response.data.launches[0].name,
+        launchLocation: response.data.launches[0].location.name,
+
+
       });
     })
     .catch(function (error) {
@@ -56,8 +60,9 @@ class App extends Component {
           <div className="component7">
             <RocketLaunch
               getLaunchTime={this.state.launchTime}
-              getLaunchName={this.state.launchName}/>
-            <CountdownTimer getLaunchDetails={this.getLaunchDetails}/>
+              getLaunchName={this.state.launchName}
+              getLaunchLocation={this.state.launchLocation}/>
+            <CountdownTimer getLaunchTime={this.state.launchTime}/>
           </div>
         </div>
 
