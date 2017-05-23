@@ -4,10 +4,11 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.1",
-    "leaflet": "^1.0.3",
+
     "react-forecast": "^0.0.7",
+    "react-count-down": "^1.1.0",
+    "react-gmaps": "^1.6.0",
     "react-iframe": "^1.0.5",
-    "react-leaflet": "^1.1.7",
     "react-materialize": "^0.18.4"
   },
   "devDependencies": {
