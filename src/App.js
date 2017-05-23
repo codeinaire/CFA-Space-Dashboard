@@ -5,6 +5,7 @@ import './App.css';
 import Video from './components/Video';
 import RocketLaunch from './components/RocketLaunch';
 import CountdownTimer from './components/CountdownTimer';
+import HumansInSpace from './components/HumansInSpace'
 
 class App extends Component {
   constructor(props) {
@@ -51,7 +52,7 @@ class App extends Component {
           <div className="component1">Constellation data</div>
           <div className="component2">Comet data</div>
           <div className="component3"><Video /></div>
-          <div className="component4">People in space</div>
+          <div className="component4"><HumansInSpace /></div>
         </div>
         <div className="c-flex-2">
           <div className="component5">Weather component</div>
