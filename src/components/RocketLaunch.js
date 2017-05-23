@@ -23,12 +23,12 @@ class RocketLaunch extends Component {
     axios.get(URL)
     .then((response) => {
       // console.log(response.data);
-      console.log('launchTime', response.data.windowstart)
-      console.log('launchName', response.data.name)
+      // console.log('launchTime', response.data.launches[0].net)
+      // console.log('launchName', response.data.launches[0].name)
       this.setState({
         // allData: response.data,
-        launchTime: response.data.windowstart,
-        launchName: response.data.name
+        launchTime: response.data.launches[0].net,
+        launchName:response.data.launches[0].name
       });
     })
     .catch(function (error) {
@@ -40,8 +40,8 @@ class RocketLaunch extends Component {
     return (
       <div>
         <h3>Rocket Launch</h3>
-        <img src={'../public/images/rocketcartoon.jpg'} className="imgRocket"/>
-        Rocket Name: {this.state.name} <br/> Rocket Launch Date {this.state.windowstart} <br/> }
+        <img src={'../public/images/rocketcartoon.jpg'} className="imgRocket" alt="RocketPicture"/>
+        Rocket Name: {this.state.launchName} <br/> Rocket Launch Date {this.state.launchTime} <br/> }
       </div>
     );
   };
