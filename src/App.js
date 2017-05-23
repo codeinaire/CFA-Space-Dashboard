@@ -3,6 +3,7 @@ import axios from 'axios';
 import Map from './components/Map';
 import './App.css';
 import Video from './components/Video';
+import Weather from './components/Weather';
 import RocketLaunch from './components/RocketLaunch';
 import CountdownTimer from './components/CountdownTimer';
 import HumansInSpace from './components/HumansInSpace'
@@ -55,7 +56,7 @@ class App extends Component {
           <div className="component4"><HumansInSpace /></div>
         </div>
         <div className="c-flex-2">
-          <div className="component5">Weather component</div>
+          <div className="component5"><Weather /></div>
           <div className="component6"><Map />
           </div>
           <div className="component7">
