@@ -62,7 +62,7 @@ class App extends Component {
               getLaunchTime={this.state.launchTime}
               getLaunchName={this.state.launchName}
               getLaunchLocation={this.state.launchLocation}/>
-            <img src="./images/rocketcartoon.jpg" />
+            <img className="rocketimage"src={require('./images/rocketcartoon.jpg')} />
             <CountdownTimer getLaunchTime={this.state.launchTime}/>
           </div>
         </div>
